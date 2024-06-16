@@ -1,0 +1,47 @@
+@font-face {
+    font-family:gily ;
+    src: url(./img/gily-roy.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: gily;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #0C111B;
+    position: relative;
+}
+
+body #main-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    filter: invert(0.2);
+}
+
+body #cover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left,rgb(0, 0, 0),#31674b89,rgb(0, 0, 0));
+}
+
+#all-info{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
