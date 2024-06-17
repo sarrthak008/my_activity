@@ -6,7 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     font-family: gily;
 }
 
@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     background-color: #0C111B;
     position: relative;
+    overflow: hidden;
 }
 
 body #main-img{
@@ -25,6 +26,7 @@ body #main-img{
     transform: translate(-50%,-50%);
     height: 100%;
     filter: invert(0.2);
+    width: 100%;
 }
 
 body #cover{
@@ -95,6 +97,10 @@ body #cover{
 }
 
 @media screen and (max-width:480px) {
+
+    body{
+       overflow: hidden;
+    }
     body #main-img{
         height: 70%;
     }
