@@ -33,11 +33,15 @@ fetch(url).then((resp)=>{
    return resp.json();
 }).then((result)=>{
      showEvent(result);
+     console.log(result)
 }).catch((err)=>console.log(err))
 
+
+
+
 const showEvent=(data)=>{
-  
-let pushEventInfo={}
+
+    let pushEventInfo={}
 
  data.forEach((eventsData) => {
    
@@ -70,11 +74,11 @@ let pushEventInfo={}
 
 }
 
-showEvent()
 
-let allInfoHtml = ""
-let container = document.querySelector("#all-info")
+
 let pushHtml = "";
+let container = document.querySelector("#all-info")
+
 
 function addPush(info){
    pushHtml+=`<div class="info" id="push"><i class="ri-restart-fill"></i>
@@ -84,7 +88,6 @@ function addPush(info){
        </div>`
       container.innerHTML+=pushHtml 
 }
-
 
 
 
@@ -101,21 +104,20 @@ function startRepo(info){
 container.innerHTML+=starRepos;
 }
 
+//startRepo()
 
 let createdRepo = "";
 
 function createRepo(info){
-   console.log(info.repo.name)
-     createdRepo+=`<div class="info" id="Repo"><i class="ri-chat-new-fill"></i>
+   //console.log(info.repo.name)
+     createdRepo +=`<div class="info" id="repo"><i class="ri-chat-new-fill"></i>
      Sarthak create new repo ${info.repo.name} <br>
     <a target="_blank" href=https://github.com/${info}>visit<i class="ri-arrow-right-up-line"></i></a>
 </div>`
-
-
 container.innerHTML+=createdRepo;
 
 }
 
-createRepo()
+//createRepo()
 
 
