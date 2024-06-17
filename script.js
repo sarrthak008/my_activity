@@ -33,7 +33,7 @@ fetch(url).then((resp)=>{
    return resp.json();
 }).then((result)=>{
      showEvent(result);
-     console.log(result)
+     //console.log(result)
 }).catch((err)=>console.log(err))
 
 
@@ -53,6 +53,8 @@ const showEvent=(data)=>{
          addPush(pushEventInfo)
       }
 
+
+
       if(eventsData.type=="WatchEvent"){
           fetch(eventsData.repo.url).then((resp)=>{
                return(resp.json())
@@ -66,7 +68,7 @@ const showEvent=(data)=>{
 
 
       if(eventsData.type=="CreateEvent"){
-          console.log(eventsData)
+         // console.log(eventsData)
           createRepo(eventsData)
       }
 
