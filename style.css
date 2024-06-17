@@ -55,7 +55,7 @@ body #cover{
 #cover #nav{
     height: 10vh;
     width: 100%;
-    background: linear-gradient(to left,#1f433883,transparent,transparent,transparent);
+    background: linear-gradient(to left,#395c52f5,transparent,transparent,transparent);
     display: flex;
     align-items: center;
     gap: 2vw;
